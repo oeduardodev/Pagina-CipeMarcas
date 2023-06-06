@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,800&display=swap"
+    rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./src/css/main.css" />
+
+  <script src="./src/js/exibe-texto.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <title>CipeMacas</title>
+
+</head>
+
+<body>
+  <script>
+    AOS.init();
+  </script>
+  <header>
+    <nav  data-aos="fade-down" id="menu-desktop">
+      <a href="#">
+        <img src="./src/imgs/cipe-logo.png" alt="CipeMacas Logo" />
+      </a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#funciona">Como Funciona?</a></li>
+        <li><a href="#contato">Fale Conosco</a></li>
+      </ul>
+      </div>
+    </nav>
+
+    <div data-aos="fade-down" class="inline-menu" >
+      <img src="./src/imgs/cipe-logo.png" alt="CipeMacas Logo" />
+
+
+      <details>
+        <summary>
+        </summary>
+        <nav class="menu">
+          <a href="#home">Home</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#funciona">Como Funciona?</a>
+          <a href="#contato">Fale Conosco</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" id="home">
+      <h2  data-aos="fade-right">Há mais de 20 anos atuando em registro de marcas e patentes.</h2>
+      <p data-aos="fade-right" >
+        Conte com a melhor assessoria especializada para cuidar do nome do seu negócio!
+      </p>
+      <a data-aos="zoom-out" data-aos-offset="180"  href="#section-form" class="botao">Clique e Proteja sua Marca</a>
+    </section>
+
+    <section class="servicos" id="servicos">
+      <h2>Nossos Serviços</h2>
+      <div class="grup-cards">
+        <div class="card card-1">
+          <div class="card-image"></div>
+          <div class="card-content">
+            <h3>Registro de Marca</h3>
+            <p>Processo legal de proteção de um nome, símbolo ou logotipo para identificar produtos ou serviços de uma
+              empresa.</p>
+          </div>
+        </div>
+        <div class="card card-2">
+          <div class="card-content">
+            <h3>Registro de Patente</h3>
+            <p>Procedimento de proteção legal de uma invenção, garantindo exclusividade ao inventor por um período
+              determinado.</p>
+          </div>
+        </div>
+        <div class="card card-3">
+          <div class="card-image"></div>
+          <div class="card-content">
+            <h3>Direito Autora</h3>
+            <p>Conjunto de leis que protege obras literárias, musicais, artísticas e científicas, garantindo os direitos
+              dos criadores.</p>
+          </div>
+        </div>
+        <div class="card card-4">
+          <div class="card-image"></div>
+          <div class="card-content">
+            <h3>Registro de Software</h3>
+            <p>Processo de proteção legal de um programa de computador, assegurando os direitos do autor sobre sua
+              criação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="depoimentos" id="depoimentos">
+      <h2>Depoimentos</h2>
+      <div class="videos-depoimentos">
+        <p>conteudo</p>
+      </div>
+    </section>
+
+    <section data-aos="fade-down" data-aos-offset="350"  data-aos-easing="ease-in-sine" class="sobre" id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>
+        A CIPE MARCAS é uma empresa de consultoria e assessoria empresarial, especializada em registro de marcas e
+        gestão de negócios desde 2012 com atuação em todo território nacional. Uma empresa jovem e dinâmica que busca
+        melhorar e se aperfeiçoar cada vez mais para dispor e prestar seus serviços de modo individualizado, com
+        qualidade, presteza e eficiência.
+      </p>
+      <p  id="texto-adicional" style="display: none;">
+        Queremos conhecer nossos clientes e de perto atender as suas necessidades de acordo com a realidade e
+        particularidade de cada região. Buscamos empresas/profissionais parceiros para juntos somar qualidades em nossos
+        serviços e apresentar um trabalho diferenciado a todos que nos confiam seus projetos. Nosso momento atual é de
+        renovação e crescimento com foco na ampliação da nossa atuação no mercado nacional, com objetivo de aumentar de
+        maneira efetiva nossa representatividade buscando cada vez mais estreitar relações junto aos nossos clientes por
+        meio de parcerias e representantes em todas as regiões do país.
+      </p>
+      <a class="botao" onclick="exibirTexto()">saiba mais</a>
+    </section>
+
+
+    <section class="funciona" id="funciona">
+      <div>
+        <h2>Como Funciona?</h2>
+        <p>
+          O site CPmarcas.com.br é a porta de entrada para você ou sua empresa proteger um nome, logotipo, símbolo ou
+          qualquer elemento que sirva para identificar e distinguir seus produtos ou serviços dos de outras empresas.
+        </p>
+        <p>
+          Nosso principal objetivo é garantir a exclusividade do uso dessa marca, evitando que terceiros a utilizem
+          indevidamente e causem confusão entre os consumidores. Você pode entrar em contato conosco através do
+          formulário abaixo ou pelo WhatsApp, localizado à direita. Lembre-se de que nossas redes sociais e outras
+          opções de contato estão disponíveis no rodapé de nossa página.
+        </p>
+
+
+      </div>
+      <div class="pagamento" id="pagamento">
+        <h2>Formas de Pagamento</h2>
+        <img src="./src/icons/cartao-de-credito.png" alt="Cartões" />
+        <p>Cartão</p>
+        <img src="./src/icons/rede.png" alt="Boleto" />
+        <p>Pix</p>
+        <img src="./src/icons/pagamento.png" alt="Pix" />
+        <p>Boleto</p>
+      </div>
+    </section>
+
+    <div class="pagamento-mobile" id="pagamento">
+      <h2>Formas de Pagamento</h2>
+      <img src="./src/icons/cartao-de-credito.png" alt="Cartões" />
+      <p>Cartão</p>
+      <img src="./src/icons/rede.png" alt="Boleto" />
+      <p>Pix</p>
+      <img src="./src/icons/pagamento.png" alt="Pix" />
+      <p>Boleto</p>
+    </div>
+
+    <section id="section-form">
+      <form id="contato" method="POST">
+        <h3>Proteja Sua Empresa Agora Mesmo</h3>
+
+        <label for="nome">Seu Nome</label>
+        <input type="text" name="nome" id="nome" required />
+
+        <label for="nome">Seu Télefone Com DDD</label>
+        <input type="number" name="telefone" id="telefone" required />
+
+        <label for="email">Seu Email</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="mensagem">Escreva o que você deseja</label>
+        <textarea name="mensagem" id="mensagem" required></textarea>
+
+        <label for="arquivos">Lembre-se de anexar: CPF; RG; Comprovante de residência; Documento que comprove o
+          exercício da atividade; Logomarca (não é obrigatório).</label>
+        <input class="arquivos-input" type="file" name="arquivos" id="arquivos" multiple />
+        <button class="botao" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <div class="whats-icone">
+    <a href="https://wa.me/5511967509714" target="_blank">
+      <img src="./src/icons/whatsapp.png" alt="imagem link para o whatsapp" />
+    </a>
+  </div>
+
+  <footer id="rodape">
+    <img class="logo" src="./src/imgs/cipe-logo.png" alt="CipeMacas Logo" />
+    <div>
+      <p>Redes Sociais</p>
+      <ul>
+        <li><a target="_blank" href="https://www.instagram.com/cipemarcas/">Nosso Instagram</a></li>
+        <li><a target="_blank" href="https://www.facebook.com/cipeconsultoria/?locale=pt_BR">Nosso Facebook</a></li>
+      </ul>
+    </div>
+    <div>
+      <p>Mais informações</p>
+      <ul>
+        <li><a href="#">Politica de uso</a></li>
+        <li><a href="#">Outras Proteções</a></li>
+      </ul>
+    </div>
+    <div>
+      <p>Contatos</p>
+      <ul>
+        <li>(11) 4812 0367 </li>
+        <li>(11) 94944 2300 </li>
+        <li>contato@cipemarcas.com.br </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
