@@ -8,3 +8,4 @@
       textoAdicional.style.display = "none";
     }
   }
+  
