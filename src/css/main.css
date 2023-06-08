@@ -10,6 +10,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -19,6 +20,29 @@ body {
   overflow-x: hidden;
   width: 100%;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #505050;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffdd44;
+  border-radius: 5px 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #181818;
+}
+
+
 .menu-mobile{
   display: none;
 }
@@ -34,7 +58,7 @@ body {
 #menu-desktop a img {
   width: 6rem;
   margin: 1rem;
-  margin-left: 10rem;
+  margin-left: 8rem;
 }
 
 #menu-desktop ul {
@@ -43,7 +67,7 @@ body {
   align-content: center;
   margin: 0 auto;
   margin-top: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 #menu-desktop ul li {
@@ -69,11 +93,15 @@ section {
 }
 
 #home {
-  background-color: #171515;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(20, 18, 18, 0.877)),
+    url("../imgs/mulher-bg.png");  
   width: 100%;
   padding-bottom: 8rem;
   padding-top: 11rem;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
+
 
 #home h2 {
   color: #feea3b;
@@ -104,7 +132,7 @@ section {
   border: none;
   cursor: pointer;
   font-size: 1.3rem;
-  background-color: #202020;
+  background-color: #0f0f0f;
   padding: 1rem;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -135,9 +163,7 @@ section {
   font-weight: 300;
 }
 
-.servicos h3 {
-  margin-top: 6rem;
-}
+
 
 .grup-cards {
   display: inline-flex;
@@ -182,12 +208,12 @@ section {
 }
 
 .card {
-  width: 16rem;
-  height: 20rem;
+  width: 11.5rem;
+  height: 15rem;
   border-radius: 5px;
   overflow: hidden;
   color: #f1f1f1;
-  margin: 1rem;
+  margin: 0.6rem;
   border: 2px solid #feea3b00;
 
   cursor: pointer;
@@ -195,10 +221,17 @@ section {
   transition: transform 0.3s;
 }
 
+.card h3{
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 4rem;
+}
+
 .card p {
-  width: 14rem;
+  width: 10rem;
   margin: 0 auto;
   text-align: center;
+  font-size: 0.8rem;
 }
 
 .card:hover {
@@ -321,6 +354,56 @@ section-form {
   color: #dddddd;
 }
 
+.empresas{
+  text-align: center;
+  margin: 0 auto ;
+  display: flex;
+  width: 100%;
+}
+
+.empresas h2 {
+  display: block;
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  
+  margin-bottom: 0rem;
+}
+
+
+.carousel-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.carousel {
+  display: inline-flex;
+  align-items: center;
+  animation: carouselAnimation 100s linear infinite;
+}
+.carousel img {
+  width: 8rem; /* Ajuste o tamanho das imagens conforme necessário */
+  height: auto;
+  margin: 2.5rem;
+  object-fit: contain;
+
+}
+
+
+@keyframes carouselAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
 form {
   color: #f5f5f5;
   width: 40rem;
@@ -386,7 +469,7 @@ textarea {
   top: 0;
   left: 0;
   margin-top: 30rem;
-  margin-left: calc(100% - 8rem);
+  margin-left: calc(100% - 10rem);
   padding: 0.2rem;
   z-index: 9999;
 }
@@ -413,21 +496,32 @@ textarea {
 }
 
 footer {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  color: #9b9b9b;
+  font-size: .9rem;
   background-color: #171515;
   padding: 6rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-footer li {
+footer li{
+  font-size: .9rem;
   margin-top: 0.4rem;
-  letter-spacing: 0.1rem;
+  color: #9b9b9b;
 }
 
 footer a {
   color: #9b9b9b;
+
 }
+
+footer div p{
+  color: #f1f1f1;
+}
+
+
 
 footer img {
   width: 5rem;
@@ -435,13 +529,19 @@ footer img {
   margin: 1rem;
 }
 
+.social-icone{
+  width: 1.5rem;
+  height:1.5rem;
+  margin: 0;
+
+}
+
 @media (max-width: 1150px) {
+
+
+
   .pagamento {
     display: none;
-  }
-
-  .inline-menu {
-    z-index: 9999;
   }
 
   #home p {
@@ -483,16 +583,73 @@ footer img {
   }
 }
 
+@media (max-width: 1024px) {
+  
+#menu-desktop ul {
+  justify-content: center;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-left: 2rem;
+    width: 60rem;
+}
+#menu-desktop ul li {
+margin: .3rem;
+}
+
+#menu-desktop a img{
+  margin-left: 1.5rem;
+}
+}
+
+
+
 @media (max-width: 768px) {
+
+  
+  .empresas{
+    padding-bottom: 5rem;
+  justify-content: collum;
+    margin: 0 auto ;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: block;
+    width: 30rem;
+  }
+  
+  .empresas h2 {
+    justify-content: center;
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+  }
+  
   #menu-desktop {
     display: none;
   }
+
   .menu-mobile{
-    display: block;
+    display: inline;
+    z-index: 3 !important;
+    background-color: #1b1b1be5;
+  }
+
+  .mobile-inline {
+    display: inline-flex;
+    background-color: #1b1b1be5;
+
+  }
+  
+
+  .menu-mobile img{
+    width: 10rem;
+    height: 4rem;
+    margin-top: 1rem;
+    margin-left: 52vw;
   }
   a {
     text-decoration: none;
-    color: #1E1E23;
     opacity: 1;
     font-family: 'work sans', sans serif;
     font-size: 1.2em;
@@ -509,16 +666,12 @@ footer img {
     list-style-type: none;
   }
 
-
-
   .container {
     margin-top: 50px;
     Display: flex;
     justify-content: center;
     align-items: center;
   }
-
-
 
   nav {
     background-color: #1b1b1be5;
@@ -559,8 +712,8 @@ footer img {
     border-radius: 3px;
     z-index: 1;
     transform-origin: 5px 0px;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    transition: transform 0.5s cubic-bezier(0.97, 0.2, 0.05, 1.0),
+      background 0.5s cubic-bezier(0.90, 0.2, 0.05, 1.0),
       opacity 0.55s ease;
   }
 
@@ -575,7 +728,7 @@ footer img {
   #menuToggle input:checked~span {
     opacity: 1;
     transform: rotate(45deg) translate(-3px, -1px);
-    background: #36383F;
+    background: #ffffff;
   }
 
   #menuToggle input:checked~span:nth-last-child(3) {
@@ -594,7 +747,7 @@ footer img {
     margin: -50px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
-    background-color: #171515;
+    background-color: #1b1b1be5;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
@@ -613,37 +766,55 @@ footer img {
   }
 
   header {
-    background-color: #1b1b1be5;
+    width: 100%;
+    background-color: #1b1b1b;
+    z-index: 9999;
   }
 
   #home h2 {
-    background-color: #171515;
     margin-top: -6rem;
-    width: 30rem;
+    margin-left: -4rem;
+    font-size: 3.5rem;
+    width: 25rem;
   }
 
   #home p {
-    width: 30rem;
+    width: 25rem;
+    margin-left: -4rem;
+
+  }
+
+  .sobre h2{
+    margin-left: -2rem;
+
   }
 
   .sobre p {
-    width: 30rem;
+    width: 20rem;
+    margin-left: -2rem;
   }
 
+  .funciona h2 {
+    margin-left: -2rem;
+  }
   .funciona p {
-    width: 30rem;
+    width: 20rem;
+    margin-left: -2rem;
+
   }
 
   form {
-    width: 30rem;
+    margin: 0 auto;
+    margin-left: -2rem;
+    width: 65vw;
   }
 
   input {
-    width: 25rem;
+    width: 55vw;
   }
 
   textarea {
-    width: 25rem;
+    width: 55vw;
   }
 
   .logo img {
@@ -659,7 +830,7 @@ footer img {
     top: 0;
     left: 0;
     margin-top: 30rem;
-    margin-left: calc(100% - 8rem);
+    margin-left: calc(100% - 12rem);
   }
 
   footer {
@@ -678,8 +849,12 @@ footer img {
     width: 40rem;
     position: fixed;
   }
+  .menu-mobile img {
 
+    margin-left: 98vw;
+}
   #home {
+    z-index: 1;
     padding-top: 20rem;
     width: 40rem;
   }
@@ -688,38 +863,43 @@ footer img {
     width: 40rem;
   }
 
-  footer {
-    width: 40rem;
-  }
+
 
   #home h2 {
-    background-color: #171515;
     margin-top: -6rem;
     width: 25rem;
+    margin-left: .5rem;
   }
 
   #home p {
-    background-color: #171515;
     margin-top: 2rem;
     width: 19rem;
+    margin-left: .5rem;
   }
 
   .sobre p {
-    width: 19rem;
+    width: 30rem;
   }
+  .sobre>.botao{
+    margin-left: -2rem;
 
+  }
   .funciona p {
-    width: 19rem;
+    width: 30rem;
   }
 
   .botao {
     width: 10rem;
+    margin-left: 0rem;
   }
 
   form {
+    width: 30rem;
     margin-left: -3rem;
   }
-
+  form>.botao {
+    margin-left: 0rem;
+  }
   input {
     width: 25rem;
   }
@@ -732,6 +912,15 @@ footer img {
   .card {
     width: 25rem;
     height: 20rem;
+  }
+
+  .card h3{
+    font-size: 2rem;
+  }
+
+  .card p{
+    font-size: 1.2rem;
+    width: 15rem;
   }
 
   .pagamento-mobile {
@@ -757,4 +946,13 @@ footer img {
     flex-direction: row-reverse;
     justify-content: space-around;
   }
+
+  .empresas {
+   margin-left: 5rem;
+  }
+
+  footer{
+    width: 40rem;
+  }
+
 }
