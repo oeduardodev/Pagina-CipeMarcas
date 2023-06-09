@@ -822,6 +822,9 @@ footer img {
 }
 
 @media (max-width: 425px) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     width: 40rem;
     position: fixed;
