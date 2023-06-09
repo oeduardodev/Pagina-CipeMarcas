@@ -245,23 +245,22 @@ section {
   display: flex;
   flex-direction: column;
   align-content: center;
-  padding: 5rem;
+  padding: 1rem;
   background-color: #171515;
 }
 
 .depoimentos h2 {
   font-size: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   font-family: "Playfair Display", serif;
   font-weight: 300;
   color: #feea3b;
 }
 
-.videos-depoimentos {
+.videos-depoimentos video {
   align-content: center;
-  background-color: #636363;
-  width: 80%;
-  height: 30rem;
+  width: 50rem;
+
 
   margin: 0 auto;
 }
@@ -660,7 +659,8 @@ footer img {
   }
 
   .menu-mobile a {
-    color: #feea3b;
+    color: #f1f1f1;
+    border-bottom: 2px solid rgb(253, 194, 0);
   }
   #menuToggle {
     display: flex;
@@ -853,7 +853,11 @@ footer img {
     width: 19rem;
     margin-left: 0.5rem;
   }
+  .sobre h2{
+    margin: 1rem;
 
+    margin-left: -1.9rem;
+  }
   .sobre p {
     width: 30rem;
   }
@@ -863,7 +867,20 @@ footer img {
   .funciona p {
     width: 30rem;
   }
-
+  .depoimentos{
+    margin-bottom: -5rem;
+  }
+  .depoimentos h2{
+    margin-bottom: -5rem;
+  }
+  .videos-depoimentos video {
+    align-content: center;
+    width: 35rem;
+    height: 30rem;
+  
+    margin: 0 auto;
+  }
+  
   .botao {
     width: 10rem;
     margin-left: 0rem;
