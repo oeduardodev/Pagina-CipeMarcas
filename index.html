@@ -115,10 +115,32 @@
       </div>
     </section>
 
-    <section class="depoimentos" id="depoimentos">
+    <section id="depoimentos">
       <h2>Depoimentos</h2>
-      <div class="videos-depoimentos">
-        <video autoplay loop src="./src/videos/chats-depoimentos.mp4"></video>      
+        <div class="dep-carousel-container">
+          <div  class="dep-carousel">
+            <img src="./src/imgs/depoimento-1.png" alt="Imagem 1">
+            <img src="./src/imgs/depoimento-2.png" alt="Imagem 2">
+            <img src="./src/imgs/depoimento-3.png" alt="Imagem 3">
+            <img src="./src/imgs/depoimento-4.png" alt="Imagem 4">
+            <img src="./src/imgs/depoimento-5.png" alt="Imagem 5">
+            <img src="./src/imgs/depoimento-1.png" alt="Imagem 1">
+            <img src="./src/imgs/depoimento-2.png" alt="Imagem 2">
+            <img src="./src/imgs/depoimento-3.png" alt="Imagem 3">
+            <img src="./src/imgs/depoimento-4.png" alt="Imagem 4">
+            <img src="./src/imgs/depoimento-5.png" alt="Imagem 5">
+            <img src="./src/imgs/depoimento-1.png" alt="Imagem 1">
+            <img src="./src/imgs/depoimento-2.png" alt="Imagem 2">
+            <img src="./src/imgs/depoimento-3.png" alt="Imagem 3">
+            <img src="./src/imgs/depoimento-4.png" alt="Imagem 4">
+            <img src="./src/imgs/depoimento-5.png" alt="Imagem 5">
+            <img src="./src/imgs/depoimento-1.png" alt="Imagem 1">
+            <img src="./src/imgs/depoimento-2.png" alt="Imagem 2">
+            <img src="./src/imgs/depoimento-3.png" alt="Imagem 3">
+            <img src="./src/imgs/depoimento-4.png" alt="Imagem 4">
+            <img src="./src/imgs/depoimento-5.png" alt="Imagem 5">
+          </div>
+        </div>
       </div>
     </section>
 
@@ -147,7 +169,7 @@
       <div>
         <h2>Como Funciona?</h2>
         <p>
-          O site cipemarcas.com.br é a porta de entrada para você ou sua empresa proteger um nome, logotipo, símbolo ou
+          O site cipemarcas.com é a porta de entrada para você ou sua empresa proteger um nome, logotipo, símbolo ou
           qualquer elemento que sirva para identificar e distinguir seus produtos ou serviços de outras empresas.
         </p>
         <p>
@@ -157,56 +179,21 @@
           opções de contato estão disponíveis no rodapé de nossa página.
         </p>
       </div>
-  
-      <div class="pagamento" id="pagamento">
-        <h2>Formas de Pagamento</h2>
-        <img src="./src/icons/cartao-de-credito.png" alt="Cartões" />
-        <p>Cartão</p>
-        <img src="./src/icons/rede.png" alt="Boleto" />
-        <p>Pix</p>
-        <img src="./src/icons/pagamento.png" alt="Pix" />
-        <p>Boleto</p>
-      </div>
     </section>
 
-    <div class="pagamento-mobile" id="pagamento">
-      <h2>Formas de Pagamento</h2>
-      <img src="./src/icons/cartao-de-credito.png" alt="Cartões" />
-      <p>Cartão</p>
-      <img src="./src/icons/rede.png" alt="Boleto" />
-      <p>Pix</p>
-      <img src="./src/icons/pagamento.png" alt="Pix" />
-      <p>Boleto</p>
-    </div>
 
     <section id="section-form">
-      <form id="contato" method="POST" action="https://formkeep.com/f/duduleite0@gmail.com">
-        <h3>Proteja Sua Marca Agora Mesmo</h3>
-    
-        <label for="nome">Seu Nome</label>
-        <input type="text" name="nome" id="nome" required />
-    
-        <label for="telefone">Seu Telefone Com DDD</label>
-        <input type="tel" name="telefone" id="telefone" required />
-    
-        <label for="email">Seu Email</label>
-        <input type="email" name="email" id="email" required />
-    
-        <label for="mensagem">Escreva o que você deseja</label>
-        <textarea name="mensagem" id="mensagem" required></textarea>
-    
-        <label for="arquivos">Caso queira, anexe algum documento.</label>
-        <input class="arquivos-input" type="file" name="arquivos[]" id="arquivos" multiple />
-    
-    
-        <button class="botao" type="submit">Enviar</button>
-    </form>
+
+      <h3>Proteja Sua Marca Agora Mesmo.</h3>
+      <a title="Lembre-se de nos informar o seu nome e o nome da sua marca." href="mailto:contato@cipemarcas.com.br">
+        <button class="botao" type="submit">Entre em contato Por Email</button></a>
+      <p>contato@cipemarcas.com.br</p>
     </section>
-      
+
   </main>
 
   <div class="empresas">
-    <h2 class="empresas-titulo" style="color: black;">Empresas que já trabalhamos</h2>
+    <h2 class="empresas-titulo" style="color: black;">Marcas que nós Registramos.</h2>
     <div class="carousel-container">
       <div class="carousel">
         <img src="./src/imgs/logos/logo-1.png" alt="Imagem 1">
@@ -242,11 +229,15 @@
       </div>
     </div>
   </div>
- 
+
 
   <div class="whats-icone">
-    <a href="https://wa.me/5511967509714" target="_blank">
-      <img src="./src/icons/whatsapp.png" alt="imagem link para o whatsapp" />
+    <a href="https://wa.me/5511949442300" target="_blank">
+      <img src="./src/icons/whatsapp.png" alt="imagem link para o whatsapp" target="_blank" />
+    </a>
+    <a aria-label="Lembre-se de nos informar o seu nome e o nome da sua marca." href="mailto:contato@cipemarcas.com.br"
+      class="email">
+      <img src="./src/icons/email.png" alt="imagem link para o whatsapp" />
     </a>
   </div>
 
@@ -255,15 +246,19 @@
     <div>
       <p>Redes Sociais</p>
       <ul>
-      <li><a target="_blank" href="https://instagram.com/cipemarcas?igshid=MzRlODBiNWFlZA">   <img class="social-icone" src="./src/icons/instagram.png"> Nosso Instagram</a></li>
-       <li><a target="_blank" href="https://www.facebook.com/cipeconsultoria/?locale=pt_BR"> <img class="social-icone" src="./src/icons/facebook.png"> Nosso Facebook</a></li>
+        <li><a target="_blank" href="https://instagram.com/cipemarcas?igshid=MzRlODBiNWFlZA"> <img class="social-icone"
+              src="./src/icons/instagram.png"> Nosso Instagram</a></li>
       </ul>
     </div>
     <div>
       <p>Mais informações</p>
       <ul>
-        <li><a href="#">Politica de uso</a></li>
-        <li><a href="#">Outras Proteções</a></li>
+        <li><a target="_blank"
+            href="https://drive.google.com/file/d/1q7vaa6EES9hAqhEO6t_07kTx8JM6IJ-6/view?usp=sharing">Politica de
+            uso</a></li>
+        <li><a target="_blank"
+            href="https://drive.google.com/file/d/1q7vaa6EES9hAqhEO6t_07kTx8JM6IJ-6/view?usp=sharing">Outras
+            Proteções</a></li>
       </ul>
     </div>
     <div>
